@@ -1,0 +1,77 @@
+{
+    "name": "ghost.kit",
+    "description": "Multipurpose Ghost Blog Theme",
+    "version": "1.0.0",
+    "engines": {
+        "ghost": ">=3.0.0",
+        "ghost-api": "v3"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Vincent Desdoigts",
+        "email": "v.desdoigts@gmail.com"
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
+    "config": {
+        "posts_per_page": 15,
+        "image_sizes": {
+            "xs": {
+                "width": 150
+            },
+            "s": {
+                "width": 400
+            },
+            "m": {
+                "width": 750
+            },
+            "l": {
+                "width": 960
+            },
+            "xl": {
+                "width": 1140
+            },
+            "xxl": {
+                "width": 1920
+            }
+        }
+    },
+    "scripts": {
+        "dev": "gulp",
+        "test": "gscan .",
+        "test:ci": "gscan --fatal --verbose .",
+        "lint": "gulp lint",
+        "zip": "gulp zip"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.16",
+        "@babel/preset-env": "^7.12.16",
+        "autoprefixer": "10.2.4",
+        "beeper": "2.1.0",
+        "cssnano": "4.1.10",
+        "gscan": "3.6.1",
+        "gulp": "4.0.2",
+        "gulp-babel": "^8.0.0",
+        "gulp-concat": "2.6.1",
+        "gulp-livereload": "4.0.2",
+        "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "9.0.0",
+        "gulp-sass": "^4.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-stylelint": "13.0.0",
+        "gulp-uglify": "3.0.2",
+        "gulp-zip": "5.0.2",
+        "postcss": "8.2.4",
+        "postcss-easy-import": "3.0.0",
+        "pump": "3.0.0",
+        "stylelint": "13.9.0",
+        "stylelint-config-standard": "20.0.0",
+        "stylelint-order": "4.1.0"
+    },
+    "dependencies": {
+        "atomic-builder": "^8.2.6"
+    }
+}

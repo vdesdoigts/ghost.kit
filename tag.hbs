@@ -1,0 +1,13 @@
+{{!< default}}
+
+<div class="c-page c-page--home">
+    <main class="o-container">
+        {{> feed}}
+        {{pagination}}
+    </main>
+</div>
+
+{{> modal}}
+{{> loading}}
+
+{{#contentFor "body_class"}}c-body--feed{{/contentFor}}

@@ -1,0 +1,64 @@
+{{!< default}}
+
+<main class="o-container" id="post">
+    <article class="c-post c-post--single u-pb(xxl)">
+        <div class="o-grid">
+            <div class="o-grid__col o-grid__col--12 o-grid__col--4@tablet-up">
+                <div class="c-post__side">
+                    <div class="o-grid o-grid--custom o-grid--gutter-xs">
+                        {{#post}}
+                            <div class="o-grid__col o-grid__col--12 o-grid__col--12@tablet-up">
+                                <div class="c-post__cover">
+                                    {{> post-media ratio="square"}}
+                                </div>
+                            </div>
+                            <div class="o-grid__col o-grid__col--12 o-grid__col--12@tablet-up">
+                                <div class="o-grid u-jc(space-between)">
+                                    {{#if tags}}
+                                        <div class="o-grid__col">
+                                            <div class="o-grid o-grid--custom o-grid--gutter-xs">
+                                                {{#foreach tags}}<div class="o-grid__col">
+                                                    <a class="c-tag c-tag--{{slug}}" href="{{url}}"
+                                                        title="{{name}}"><span>{{name}}</span></a>
+                                                </div>{{/foreach}}
+                                            </div>
+                                        </div>
+                                    {{/if}}
+                                    <div class="o-grid__col">
+                                        {{> share}}
+                                    </div>
+                                </div>
+                            </div>
+                        {{/post}}
+                    </div>
+                    <div class="u-hidden@tablet-down">
+                        {{> latest-posts}}
+                    </div>
+                </div>
+            </div>
+            {{#post}}
+                <div class="o-grid__col o-grid__col--8@tablet-up">
+                    <div class="kg-canvas">
+                        <header class="u-pt(md)">
+                            <h1 class="u-fw(bold) u-tt(uppercase)">{{title}}</h2>
+                            <div class="u-c(black)">
+                                <span>by
+                                    {{#foreach authors}}
+                                        <span class="author-name">{{name}}</span>
+                                    {{/foreach}}
+                                </span>,
+                                <span><time class="c-meta__time" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMM D, YYYY"}}</time></span>
+                            </div>
+                        </header>
+                        <div class="c-post__content u-pt(md)">
+                            {{content}}
+                        </div>
+                    </div>
+                </div>
+            {{/post}}
+        </div>
+    </article>
+    <div class="u-hidden@tablet-up">
+        {{> latest-posts}}
+    </div>
+</main>

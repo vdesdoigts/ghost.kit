@@ -1,0 +1,41 @@
+// Settings (required)
+@import 'atomic-builder/scss/settings/colors';
+@import 'atomic-builder/scss/settings/global';
+
+// Tools (required)
+@import 'atomic-builder/scss/tools/functions';
+@import 'atomic-builder/scss/tools/mixins';
+
+// Generic (optional)
+@import 'atomic-builder/scss/generic/normalize';
+@import 'atomic-builder/scss/generic/box-sizing';
+@import 'atomic-builder/scss/generic/reset';
+@import 'atomic-builder/scss/generic/shared';
+
+// Elements (optional)
+@import 'atomic-builder/scss/elements/root';
+@import 'atomic-builder/scss/elements/page';
+@import 'atomic-builder/scss/elements/headings';
+@import 'atomic-builder/scss/elements/forms';
+@import 'atomic-builder/scss/elements/tables';
+
+// Objects (optional)
+@import 'atomic-builder/scss/objects/grid';
+@import 'atomic-builder/scss/objects/container';
+
+// Utilities (optional)
+@import 'atomic-builder/scss/utilities/position';
+@import 'atomic-builder/scss/utilities/display';
+@import 'atomic-builder/scss/utilities/flex';
+@import 'atomic-builder/scss/utilities/alignment';
+@import 'atomic-builder/scss/utilities/float';
+@import 'atomic-builder/scss/utilities/clear';
+@import 'atomic-builder/scss/utilities/sizing';
+@import 'atomic-builder/scss/utilities/spacing';
+@import 'atomic-builder/scss/utilities/overflow';
+@import 'atomic-builder/scss/utilities/colors';
+@import 'atomic-builder/scss/utilities/text';
+@import 'atomic-builder/scss/utilities/visibility';
+@import 'atomic-builder/scss/utilities/cursors';
+@import 'atomic-builder/scss/utilities/reset';
+@import 'atomic-builder/scss/utilities/helper';
