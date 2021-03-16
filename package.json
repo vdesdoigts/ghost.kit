@@ -1,5 +1,5 @@
 {
-    "name": "ghost.kit",
+    "name": "ghostkit",
     "description": "Multipurpose Ghost Blog Theme",
     "version": "1.0.0",
     "engines": {
@@ -66,10 +66,13 @@
         "gulp-zip": "5.0.2",
         "postcss": "8.2.4",
         "postcss-easy-import": "3.0.0",
+        "prettier": "^2.2.1",
         "pump": "3.0.0",
         "stylelint": "13.9.0",
-        "stylelint-config-standard": "20.0.0",
-        "stylelint-order": "4.1.0"
+        "stylelint-config-prettier": "^8.0.2",
+        "stylelint-config-rational-order": "^0.1.2",
+        "stylelint-config-sass-guidelines": "^7.1.0",
+        "stylelint-prettier": "^1.1.2"
     },
     "dependencies": {
         "atomic-builder": "^8.2.6"

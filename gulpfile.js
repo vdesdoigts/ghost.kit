@@ -74,7 +74,7 @@ function js(done) {
 
 function lint(done) {
     pump([
-        src(['assets/css/**/*.scss']),
+        src(['assets/scss/**/*.scss']),
         gulpStylelint({
             fix: true,
             reporters: [
